@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: absolute;
+    height: 5rem;
+    background-color: rgba(250, 250, 250, 0.1); 
+    width: 100%;    
+    position: fixed;
+    top: 0px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.desktop-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.logo {
+    color:#fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+span {
+    color: #ed563b;
+}
+.menu li {
+    list-style: none;
+}
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 0px 12px;
+}
+.menu li a:hover {
+    color: #ed563b;
+}
+#sign {
+    background-color: #ed563b;
+    padding: 0.6875rem 1.0625rem;
+}
+#sign:hover{
+    background-color: #f45c3db9;
+}
+
+/* First-page */
+
+.accueil {
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+}
+
+.back-video {
+    /* width: 100%; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+ }
+
+.accueil .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(35,45,57,0.8));
+}
+
+h6 {
+font-size: 1.125rem;
+margin-top: 0;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 0.5px;
+color: #fff;
+}
+
+.accueil .hero h2 {
+    font-size: 5.25rem;
+    font-weight: 800;
+    margin-top: 1.5625rem;
+    margin-bottom: 1.875rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #ed563b;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+/* 'fin-first-page' */
+
+.container {
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+
+/* Choose program 'second-page' */
+
+.alter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.program {
+    width: 33.75rem;
+    height: 8.661875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8.75rem 0px 5rem;
+
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #232d39;
+    text-transform: uppercase;
+}
+
+.img {
+    width: 2.8125rem;
+    height: 0.9375rem;
+    margin-block: 1rem;
+}
+
+.para {
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    color: #7a7a7a;
+    text-align: center;
+} 
+
+ .course-list{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.course-item{
+    display:flex;
+    gap:1.5625rem;
+    padding-inline: 0.9375rem;
+    margin-bottom: 3.75rem;
+    align-items:flex-start;
+}
+
+.info h4{
+    margin:0 0 7px;
+    font-size: 1.1875rem;
+    color:#232d39;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.info p{
+    color:#7a7a7a;
+    line-height: 1.5625rem;
+    font-size: 0.875rem;
+}
+
+.info span {
+    color: #007bff;
+}
+
+.info a{
+    text-decoration:none;
+    color:#ed563b;
+    font-size: 0.8125rem;
+    font-weight:500;
+    margin-top: 7px;
+}
+
+/* fin-second-page */
+
+
+/* Don't think 'Third-page' */
+
+.begin {
+    background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg)center /cover no-repeat;
+    padding-block: 7.5rem;
+    /* text-align: center; */
+}
+
+.think {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* text-align: center; */
+}
+.think h2 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ffff;
+}
+
+.think p {
+    width: 57.5rem;
+    height: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0.9375rem 0px 1.5625rem;
+}
+
+/* fin-third-page */
+
+/* OUR CLASSES 'fourth-page' */
+
+.classe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.intro {
+    width: 33.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 6rem;
+}
+
+.intro p {
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    color: #7a7a7a;
+    text-align: center;
+}
+
+.source {
+    display: grid;
+    grid-template-columns: 21.875rem 43.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.source .menu-source ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.source .menu-source ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.9375rem;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 0.9375rem rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1.875rem 1.875rem;
+    font-size: 1.1875rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.source .menu-source ul li a i{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin-right: 1.25rem;
+    color: #ed563b;
+}
+
+a {
+    text-decoration: none;
+}
+
+.source .menu-source ul li a span {
+    color: #232d39;
+}
+
+.source .menu-source  .view {
+    text-align: center;
+    padding: 1.25rem 1.875rem;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #ed563b;
+    font-weight: 700;
+}
+
+.source .menu-source .view a {
+    color: #fff; 
+}
+
+.source .infos {
+    padding: 0px 0.9375rem;
+    margin-bottom: 2rem;
+}
+
+ .source .infos img {
+    width: 100%;
+    border-radius: 8px;
+ }
+
+ .source .infos h4 {
+    font-size: 1.4375rem;
+    font-weight: 700;
+    color: #232d39;
+    margin: 1.875rem 0px 1.25rem;    
+ }
+
+.source .infos p {
+    font-size: 0.875rem;
+    color: #7a7a7a;
+    margin-bottom: 1.75rem;
+}
+
+/* fin-fourth-page */
+
+/* CLASSES SCHEDULE fifth-page */
+
+.yoga {
+    background: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg') center / cover no-repeat;
+}
+
+.schedule {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.sche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33.75rem;
+    height: 8.662125rem;
+    align-items: center;
+    /* margin-top: 2.75rem; */
+    margin-block: 5rem;
+    padding-inline: 0.9375rem;
+}
+
+.schedule .sche h2 {
+    color: #fff;
+}
+
+.schedule .sche p {
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    color: #fff;
+    text-align: center;
+} 
+
+.schedule .week ul{
+    display: flex;
+    justify-content: center;
+    width: 69.375rem;
+    height: 1.5rem;
+}
+
+.schedule .week ul li{
+    list-style: none;
+    margin-right: 0.9375rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.schedule .week a{
+    color: #fff;
+}
+
+.schedule .week a:hover{
+    color: #ed563b;
+}
+
+.schedule table {
+    width: 57.5rem;
+    height: 31.3125rem;
+    padding-inline: 0.9375rem;
+    /* margin-left: 5.9375rem; */
+    text-align: center;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.schedule table tr td {
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+
+/* fin-fifth-page */
+
+/* Expert Trainers sixth-page */
+
+.last {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+.trainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 540px;
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+
+.last .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    background-color: #fff; 
+
+}
+
+.last .blogs .blog{
+    margin-inline: 1rem;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.last .blogs .blog .items {
+    width: 21.875rem;
+    height: 32.7568125rem;
+    padding: 2.5rem;
+
+}
+
+.last .blogs .blog .items img{
+    max-width: 100%;
+    height: 12.80075rem;
+}
+
+.last .blogs .blog .strength {
+    width: 16.875rem;
+    height: 14.9560625rem;
+}
+.last .blogs .blog .items ul {
+    display: flex;
+}
+
+.last .blogs .blog .items ul li {
+    list-style: none;
+}
+
+.last .blogs .blog .items span {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    margin-top: 1.5625rem;
+    margin-bottom: 0.625rem;
+}
+
+.last .blogs .blog .items h4 {
+    font-size: 1.1875rem;
+    font-weight: 600;
+    color: #232d39;
+    margin-bottom: 1.125rem;
+}
+
+.last p {
+    font-size: 0.875rem;
+    color: #7a7a7a;
+    line-height: 1.5625rem;
+    margin-bottom: 1.25rem;
+    display: block;
+    justify-content: flex-start;
+}
+
+.last .blogs .blog .items a i {
+    margin-right: 0.625rem;
+    color: #232d39;
+} 
+
+/* fin-sixth-page */
+
+
+/* Last-page */
+
+.map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.contact {
+    height: 37.5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg')center /cover no-repeat;
+}
+
+.contact-form{
+    width: 37.5rem;
+    height: 27.53125rem;
+    background: #fff;
+    padding:2.5rem;
+    border-radius:4px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    border:1px solid #ddd;
+    margin-bottom: 1.875rem;
+    padding-inline:0.625rem;
+    font-size: 1rem;
+    outline:none;
+}
+
+.name, .email{
+    width: 13.3125rem;
+    height: 2.5rem;
+    padding-inline: 0.625rem;
+
+}
+
+.email{
+        margin-left: 1.5625rem;
+}
+
+.contact-form #subject{
+    width: 28.5rem;
+    height: 2.5rem;
+    margin-bottom: 1.875rem;
+    padding-inline: 0.625rem;
+
+}
+
+.contact-form textarea{
+    width: 28.5rem;
+    height: 9.375rem;
+    resize:none;
+    margin-bottom: 1.875rem;
+}
+
+.contact-form button{
+    width: 8.04875rem;
+    height: 2.59375rem;
+    background:#ed563b;
+    color:#fff;
+    border:none;
+    margin: -8px 0px 0px;
+    padding: 0.6875rem 1.0625rem;
+    font-size: 0.8125rem;
+    font-weight:400;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+
+/* fin-last-page */
+
+
+
+footer {
+    width: 100%;
+    height: 25px;
+    margin-inline: auto;
+    color: #232d39;
+    font-size: 13px;
+    padding: 30px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
