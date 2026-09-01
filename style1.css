@@ -60,6 +60,7 @@ span {
     background-color: #f45c3db9;
 }
 
+<<<<<<< HEAD
 .BarIcon {
     display: flex;
     justify-content: center;
@@ -77,13 +78,20 @@ span {
     color: #232d39;
     cursor: pointer;
 }
+=======
+>>>>>>> d1228b4ceb73c31dd3c153609261151b51503a09
 /* First-page */
 
 .accueil {
     width: 100%;
     display: flex; 
+<<<<<<< HEAD
     justify-content: center;
     background: linear-gradient(rgba(35,45,57,0.8));
+=======
+    justify-content: center; 
+    /* position: relative; */
+>>>>>>> d1228b4ceb73c31dd3c153609261151b51503a09
 }
 
 .back-video {
@@ -93,9 +101,15 @@ span {
     top: 0;
     right: 0;
     left: 0;
+<<<<<<< HEAD
     z-index: -1;
     object-fit: cover;
     
+=======
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+>>>>>>> d1228b4ceb73c31dd3c153609261151b51503a09
  }
 
 .accueil .hero {
@@ -105,6 +119,10 @@ span {
     align-items: center;
     width: 100%;
     height: 100vh;
+<<<<<<< HEAD
+=======
+    background: linear-gradient(rgba(35,45,57,0.8));
+>>>>>>> d1228b4ceb73c31dd3c153609261151b51503a09
 }
 
 h6 {
@@ -637,6 +655,7 @@ footer {
     display: none;
 }
 
+<<<<<<< HEAD
 /* xsm screen */
 @media (max-width: 480px) {
     .container{
@@ -701,3 +720,6 @@ footer {
         max-width: 1200px;
     }
 }
+=======
+
+>>>>>>> d1228b4ceb73c31dd3c153609261151b51503a09
