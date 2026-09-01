@@ -18,22 +18,37 @@ header{
 }
 .desktop-menu {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 100px 2.5fr 1fr;
+    grid-template-rows: repeat(1, auto);
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
 }
 
 .menu ul{
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    flex-flow: nowrap row;
+    /* flex-direction: row; */
     gap: 1.25rem;
+    margin-left: 5rem;
 }
 
 .logo {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
     color:#fff;
     font-size: 2rem;
     font-weight: 800;
+
+    margin-left: 5rem;
 }
 
 span {
@@ -63,8 +78,8 @@ span {
 .BarIcon {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    flex-flow: wrap column;
+    align-items: flex-start;
+    flex-flow: nowrap column;
 }
 
 .NavMobileIcon {
@@ -73,7 +88,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: wrap column;
+    /* flex-flow: nowrap row; */
     color: #232d39;
     cursor: pointer;
 }
@@ -99,6 +114,7 @@ span {
  }
 
 .accueil .hero {
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,13 +133,15 @@ color: #fff;
 }
 
 .accueil .hero h2 {
-    font-size: 5.25rem;
+    font-size: 4rem;
     font-weight: 800;
-    margin-top: 1.5625rem;
-    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+    margin-bottom: 1.5625rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #fff;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .btn {
@@ -242,7 +260,6 @@ h2 {
     justify-content: center;
     align-items: center;
 
-    /* text-align: center; */
 }
 .think h2 {
     font-size: 2.25rem;
@@ -352,7 +369,7 @@ a {
 
  .source .infos img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 3px;
  }
 
  .source .infos h4 {
@@ -412,6 +429,7 @@ a {
 .schedule .week ul{
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     width: 69.375rem;
     height: 1.5rem;
 }
@@ -437,8 +455,8 @@ a {
     padding-inline: 0.9375rem;
     /* margin-left: 5.9375rem; */
     text-align: center;
-    border: 1px solid white;
-    border-collapse: collapse;
+    border: 0.8px solid #7a7a7a;
+    border-collapse: collapse ;
 }
 
 .schedule table tr td {
@@ -526,7 +544,7 @@ a {
     color: #7a7a7a;
     line-height: 1.5625rem;
     margin-bottom: 1.25rem;
-    display: block;
+    /* display: block; */
     justify-content: flex-start;
 }
 
@@ -538,7 +556,7 @@ a {
 /* fin-sixth-page */
 
 
-/* Last-page */
+/* Contact Last-page */
 
 .map {
     display: grid;
@@ -569,7 +587,7 @@ a {
 
 .contact-form input,
 .contact-form textarea{
-    border:1px solid #ddd;
+    border:0.02px solid #ddd;
     margin-bottom: 1.875rem;
     padding-inline:0.625rem;
     font-size: 1rem;
@@ -636,14 +654,325 @@ footer {
 .mobile-menu {
     display: none;
 }
+/* xm screen */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        max-width: 700px;
+    }
+
+    header {
+        max-width: 767px;
+        background-color: white;
+        height: 5rem;
+    }
+
+     /* nav responsive */
+    .menu ul {
+        display: none;
+    }
+    .desktop-menu {
+        display: grid;
+        grid-template-columns:100px 1fr;
+        grid-template-rows: repeat(1, auto);
+    }
+    .logo {
+        width: 17.81375rem;
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-flow: nowrap row;
+        margin-left: 0;
+        color: black
+    }
+    /* accueil */
+    .accueil .hero h2 {
+        max-width: 613.594px;
+    }
+    /* choose program */
+    .program {
+        max-width: 31.875rem;
+        max-height: 8.662125rem;
+    }
+    .program p{
+        max-width: 31.875rem;
+        max-height: 3.125rem;
+    }
+    .course-list{
+        grid-template-columns: 1fr;
+    }
+    .course-list .course-item{
+        max-width: 31.875rem;
+    }
+    /* Don't think */
+    .think {
+        max-width: 31.875rem;
+        max-height: 15.4921875rem;
+    }
+    .think h2 {
+        text-align: center;
+    }
+    .think p{
+        max-width: 31.875rem;
+        /* max-height: 4.6875rem; */
+    }
+
+    /* our classes */
+    .intro p{
+        max-width: 31.875rem;
+    }
+    .source {
+        grid-template-columns: 30rem;
+    }
+}
+/* XXLG screen */
+@media (min-width: 1400px)  {
+    .container{
+        max-width: 1200px;
+    }
+
+    /* nav responsive */
+    /* .BarIcon {
+        display: none;
+    } */
+}
+
+/* XLG screen */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .container{
+        max-width: 1100px;
+    }
+
+    /* nav responsive */
+    .BarIcon {
+        display: none;
+    }
+}
+
+/* LG screen */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+
+    /* nav responsive */
+    .BarIcon {
+        display: none;
+    }
+
+    .desktop-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+/* MD screen */
+@media (min-width: 767px) and (max-width: 992px) {
+    .container{
+        max-width: 900px;
+    }
+
+    /* nav responsive */
+    .BarIcon {
+        display: none;
+    }
+
+    .desktop-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        color: black;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    /* choose program */
+    .program .para {
+        max-width: 28.125rem;
+    }
+    /* our classes */
+    .classe .intro p{
+        max-width: 28.125rem;
+    }
+    .source {
+        grid-template-columns: 18.124rem 38.09375rem;
+        gap: 1rem;
+    }
+    .source .infos {
+        align-items: flex-start;
+        max-width: 38.124rem;
+        max-height: 31.9453125rem;
+        margin-bottom: 8rem;
+    }
+    .source .infos img {
+       max-width: 38.1230625;
+       max-height: 16.1894375rem;
+    }
+    .source .infos p {
+        max-width: 28,125rem;
+        max-height: 6.25rem;
+
+    }
+    .source .menu-source ul{
+        grid-template-columns: 18,124rem;
+        padding-inline: 15px;
+    }
+    /* classes schedule */
+    .schedule .sche p{
+        max-width: 28.125rem;
+    }
+    .schedule table {
+        max-width: 48.125rem;
+        margin-left: 4.999rem;
+    }
+
+    /* expert trainers */
+    .last .trainers p {
+        max-width: 28.125rem;
+    }
+
+    .last .blogs .blog{
+        max-width: 289.984px;
+        max-height: 500.594px;    padding-right: 15px;
+        padding-left: 15px;
+    
+    }
+
+    .last .blogs .blog .items img{
+        max-width: 209.984px;
+        max-height: 159.297px;
+    }
+
+    .last .blogs p{
+        max-width: 209.84px;
+        max-height: 125px;
+        /* line-height: 1; */
+    }
+
+    /* contact */
+    .map .contact{
+        max-width: 31rem;
+    }
+
+    .map .contact .contact-form{
+        max-width: 27.25rem;
+        max-height: 26.28125rem;
+        padding: 1.875rem;
+    }
+
+    .name{
+        max-width: 10.8125rem;
+        max-height: 4.375rem;
+    }
+    .email{
+        max-width: 10.8125rem;
+        max-height: 4.375rem;
+    }
+
+
+    .contact-form #subject{
+       max-width: 23.5rem; 
+    }
+
+    .contact-form textarea{
+        max-width: 23.5rem;
+    }
+}
+
+/* xm screen */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        max-width: 700px;
+    }
+
+    header {
+        max-width: 767px;
+        background-color: white;
+        height: 5rem;
+    }
+
+     /* nav responsive */
+    .menu ul {
+        display: none;
+    }
+    .desktop-menu {
+        display: grid;
+        grid-template-columns:100px 1fr;
+        grid-template-rows: repeat(1, auto);
+    }
+    .logo {
+        width: 17.81375rem;
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-flow: nowrap row;
+        margin-left: 0;
+        color: black
+    }
+    /* accueil */
+    .accueil .hero h2 {
+        max-width: 613.594px;
+    }
+    /* choose program */
+    .program {
+        max-width: 31.875rem;
+        max-height: 8.662125rem;
+    }
+    .program p{
+        max-width: 31.875rem;
+        max-height: 3.125rem;
+    }
+    .course-list{
+        grid-template-columns: 1fr;
+    }
+    .course-list .course-item{
+        max-width: 31.875rem;
+    }
+    /* Don't think */
+    .think {
+        max-width: 31.875rem;
+        max-height: 15.4921875rem;
+    }
+    .think h2 {
+        text-align: center;
+    }
+    .think p{
+        max-width: 31.875rem;
+        /* max-height: 4.6875rem; */
+    }
+    /* our classes */
+    .classe {
+        
+    }
+    .classe .intro {
+        max-width: 31.875rem;
+        max-height: 22.412125rem;
+    }
+    .classe .intro p{
+        max-width: 31.875rem;
+    }
+    .source {
+        grid-template-columns: 30rem;
+    }
+}
 
 /* xsm screen */
 @media (max-width: 480px) {
     .container{
         max-width: 400px;
     }
-
+    
     header {
+        max-width: 480px;
         background-color: white;
         height: 5rem;
     }
@@ -661,43 +990,127 @@ footer {
 
     .desktop-menu {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns:100px 1fr;
+    }
+
+    .accueil .hero h2 {
+        width: 384px;
+        height: 153.94px;
+    }
+
+    .logo {
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-flow: nowrap row;
+        margin-left: 0;
+    }
+    /* choose program */
+    .program .para {
+        width: 28.125rem;
+    }
+    .course-list{
+        grid-template-columns: 1fr;
+    }
+
+    .course-list .course-item{
+        width: 28.125rem;
+    }
+    /* Don't think */
+    .think {
+        max-width: 30rem;
+        max-height: 15.4921875rem;
+    }
+    .think h2 {
+        text-align: center;
+    }
+    .think p{
+        max-width: 28.125rem;
+        max-height: 4.6875rem;
+    }
+
+    /* our classes */
+    .intro p{
+        max-width: 28.125rem;
+    }
+    .source {
+        grid-template-columns: 30rem;
+    }
+    /* classe schedule */
+    .schedule .sche p{
+        max-width: 28.125rem;
+    }
+    .schedule .week ul{
+        max-width: 28.125rem;
+        max-height: 5.5rem;
+        text-align: center;
+    }
+    .schedule table {
+        max-width: 28.125rem;
+        max-height: 31.3125rem;
+    }
+    .schedule table tr td {
+        max-width: 7.59475rem;
+        max-height: 6.0625rem;
+    }
+    /* expert trainers */
+    .last .trainers p {
+        max-width: 28.125rem;
+    } 
+    .last .blogs {
+        grid-template-columns: 28.125rem;
+    }
+    /* contact */
+    .map {
+        grid-template-columns: 30rem;
+    }
+    .contact {
+        max-width: 30rem;
+        max-height: 34.375rem;
+    }
+    .contact-form{
+        max-width: 26.25rem;
+        max-height: 30.65625rem;
+        padding: 1.875rem;
+    }
+    .contact-form #subject {
+        max-width: 21.125rem;
+        max-height: 4.375rem;
+        padding-inline: 10px;
+    }
+    .name{
+        max-width: 10.8125rem;
+        max-height: 4.375rem;
+    }
+    .email{
+        max-width: 10.8125rem;
+        max-height: 4.375rem;
     }
 
 
+    .contact-form #subject{
+       max-width: 23.5rem; 
+    }
+
+    .contact-form textarea{
+        max-width: 23.5rem;
+    }
+    /* input .name{
+        max-width: 21.125rem;
+        max-height: 4.375rem;
+    }
+    input .email{
+        max-width: 21.125rem;
+        max-height: 4.375rem;
+    }
+    .contact-form textarea{
+        max-width: 21.125rem;
+    } */
 }
 
-/* xm screen */
-@media (min-width: 481px) and (max-width: 767px) {
-    .container{
-        max-width: 700px;
-    }
-}
 
-/* MD screen */
-@media (min-width: 767px) and (max-width: 992px) {
-    .container{
-        max-width: 900px;
-    }
-}
 
-/* LG screen */
-@media (min-width: 992px) and (max-width: 1200px) {
-    .container{
-        max-width: 1000px;
-    }
-}
 
-/* XLG screen */
-@media (min-width: 1200px) and (max-width: 1400px) {
-    .container{
-        max-width: 1100px;
-    }
-}
 
-/* XXLG screen */
-@media (min-width: 1400px)  {
-    .container{
-        max-width: 1200px;
-    }
-}
+
