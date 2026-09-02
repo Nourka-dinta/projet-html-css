@@ -654,81 +654,14 @@ footer {
 .mobile-menu {
     display: none;
 }
-/* xm screen */
-@media (min-width: 481px) and (max-width: 767px) {
-    .container {
-        max-width: 700px;
-    }
 
-    header {
-        max-width: 767px;
-        background-color: white;
-        height: 5rem;
-    }
-
-     /* nav responsive */
-    .menu ul {
-        display: none;
-    }
-    .desktop-menu {
-        display: grid;
-        grid-template-columns:100px 1fr;
-        grid-template-rows: repeat(1, auto);
-    }
-    .logo {
-        width: 17.81375rem;
-        height: 100%;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        flex-flow: nowrap row;
-        margin-left: 0;
-        color: black
-    }
-    /* accueil */
-    .accueil .hero h2 {
-        max-width: 613.594px;
-    }
-    /* choose program */
-    .program {
-        max-width: 31.875rem;
-        max-height: 8.662125rem;
-    }
-    .program p{
-        max-width: 31.875rem;
-        max-height: 3.125rem;
-    }
-    .course-list{
-        grid-template-columns: 1fr;
-    }
-    .course-list .course-item{
-        max-width: 31.875rem;
-    }
-    /* Don't think */
-    .think {
-        max-width: 31.875rem;
-        max-height: 15.4921875rem;
-    }
-    .think h2 {
-        text-align: center;
-    }
-    .think p{
-        max-width: 31.875rem;
-        /* max-height: 4.6875rem; */
-    }
-
-    /* our classes */
-    .intro p{
-        max-width: 31.875rem;
-    }
-    .source {
-        grid-template-columns: 30rem;
-    }
-}
 /* XXLG screen */
 @media (min-width: 1400px)  {
     .container{
         max-width: 1200px;
+    }
+    .BarIcon {
+        display: none;
     }
 
     /* nav responsive */
@@ -790,7 +723,7 @@ footer {
     }
 
     .logo {
-        color: black;
+        color: white;
         align-items: flex-start;
         margin-left: 0;
     }
@@ -951,7 +884,7 @@ footer {
     }
     /* our classes */
     .classe {
-        
+
     }
     .classe .intro {
         max-width: 31.875rem;
